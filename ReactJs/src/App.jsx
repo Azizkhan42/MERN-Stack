@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const App = () => {
+function App() {
   return (
     <div>
-      <h1 className='font-bold pt-4 text-2xl'>ReactJs with TailwindCSS</h1>
+      <h1 className="font-bold pt-4 text-2xl">ReactJs with TailwindCSS</h1>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
