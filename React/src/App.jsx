@@ -1,14 +1,21 @@
-import Card from "./components/Card";
+import Navbar from "./components/layout/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
-  return <div>
-    <h1 className="text-3xl font-bold text-center">Our Employees</h1>
-    <div className="flex flex-wrap justify-center">
-      <Card title="Aziz Ur Rehman" description="Software Engineer" />
-      <Card title="Waqar" description="Product Manager" />
-      <Card title="Junaid" description="Designer" />
+  return (
+    <div>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
-  </div>;
+  );
 };
 
 export default App;
