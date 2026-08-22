@@ -1,10 +1,10 @@
+import Navbar from "./components/layout/Navbar";
+
 const App = () => {
-  return (
-    <div>
-      <h1>Hello, World!</h1>
-      <p>Welcome to my React app!</p>
-    </div>
-  );
+  return <div>
+    <Navbar></Navbar>
+    <h1>Home</h1>
+  </div>;
 };
 
 export default App;
